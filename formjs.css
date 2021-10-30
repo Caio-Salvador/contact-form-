@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html{
+        height: 99%;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to left, #21073f 0%, #311b79 100%);
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+
+}
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    box-shadow: 0 0 20px #202020;
+}
+
+fieldset{
+    border: 3px solid #361d88;
+}
+
+legend{
+    border: 1px solid #311b79;
+    padding: 10px;
+    text-align: center;
+    background-image: linear-gradient(to left, #2b0b50 0%, #3e2494 100% );
+    border-radius: 8px;
+    box-shadow: 0 0 20px #202020;
+
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: #3e1daa;
+}
+
+#motivo{
+font-family: sans-serif;
+color: white;
+border-radius: 5px;
+border-color: #2b0b50 ;
+background-color: #2b0b50;
+opacity: 60%;
+}
+
+#submit{
+    background-image: linear-gradient(to left, #21073f 0%, #311b79 100%);       
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover{
+    background-image: linear-gradient(to left, #2b0b50 0%, #3e2494 100%);
+    box-shadow: 0 0 20px #2b034d;
+}
+
+.inputBox span.error {
+    display: flex;
+    
+    padding: 0;
+
+    background-color: rgba(255, 0, 0, 0.2);
+
+}
+
+.inputBox span.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
+}
+
+#myFooter .footer-copyright{
+    margin-bottom: 35px;
+    text-align: center;
+    color: #777;
+}
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+

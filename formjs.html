@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--linguagem-->
+<html lang="pt-br">
+<head>
+    <!--Metadados-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Titulo da pagina-->
+    <title>Formulario</title>
+    <!--Link do Javascript-->
+    <script src="formjs.js" defer></script>
+    <!--Link do CSS-->
+    <link rel="stylesheet" href="formjs.css">
+</head>
+<body>
+    <!--Começo do fórmulário-->
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Fórmulário de Contato</b></legend>
+                <br>
+                <!--Primeira parte do fórmulário, nome email e telefone-->
+                <div class="inputBox">
+                    <input type="text" name="name" id="name" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                    <span class="error"></span>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                    <span class="error"></span>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                    <span class="error"></span>
+                </div>
+                <br><br>
+                <!-- Segunda parte do fórmulário, caixa de texto -->
+                <div class="Campo">
+                <label for="motivo">Motivo do Contato:</label>
+                <br><br>
+                <textarea rows="6" style="width: 26em" id="motivo" name="motivo"></textarea>
+            </div>
+            <br><br>
+                <!--Terceira parte do fórmulário, botão-->
+                <input type="submit" name="submit" id="submit" onclick="exibeAlert()" value="Enviar">    
+            </fieldset>
+        </form>
+    </div>
+    <!--Rodapé-->
+    <div class="content">
+    </div>
+    <footer id="myFooter">
+        <div class="container">
+            <p class="footer-copyright">© 2021 Copyright - Caio Salvador</p>
+        </div>
+    </footer>
+</body>
+</html>
